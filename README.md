@@ -4,43 +4,46 @@ A Unity prototype demonstrating real-time terrain scanning and reconstruction.
 
 The system continuously scans the environment using radial raycasts and progressively builds a runtime map of the explored area.
 
-Features
-Real-time terrain scanning
-Radial raycast acquisition
-Runtime map generation
-Procedural mesh reconstruction
-Terrain slope analysis
-Runtime visualization overlay
-Autonomous probe exploration
+Features :
 
-Architecture
+- Real-time terrain scanning
+- Radial raycast acquisition
+- Runtime map generation
+- Procedural mesh reconstruction
+- Terrain slope analysis
+- Runtime visualization overlay
+- Mobile scanning probe
 
-Probe -> ProbeScanner -> ScanData -> RuntimeMapSystem -> RuntimeMapRenderer -> Visualization
+Architecture :
 
-The generated map stores:
+Probe → ProbeScanner → ScanData → RuntimeMapSystem → RuntimeMapRenderer → Visualization
 
-Terrain height
-Surface normals
-Explored areas
-Traversability information
+The generated map stores :
 
-Color coding:
+- Terrain height
+- Surface normals
+- Explored areas
+- Traversability information
 
-  Green → flat terrain
-  Yellow → moderate slope
-  Red → steep terrain
-  Black → unexplored area
+Color coding :
+
+  - Green → flat terrain
+  - Yellow → moderate slope
+  - Red → steep terrain
+  - Black → unexplored area
   
-Technologies
+Technologies :  
 
-  Unity
-  C#
-  Procedural Mesh Generation
-  Runtime Data Processing
-  Physics Raycasting
-  Future Improvements
-  Multi-probe support
-  Jobs / Burst optimization
-  Terrain classification
-  Path planning
-  Occupancy grid generation
+  - Unity
+  - C#
+  - Procedural Mesh Generation
+  - Runtime Data Processing
+  - Physics Raycasting
+  - Multi-probe support
+
+Future Improvements :
+
+  - Jobs / Burst optimization
+  - Terrain classification
+  - Path planning
+  - Occupancy grid generation
